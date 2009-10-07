@@ -37,3 +37,8 @@ produce the following:
 		was	1
 
 Further example text (for input) is available in `./input/alice.txt or ./input/war.txt`
+
+Further Optimisation
+--------------------
+For extra bonus points: To reduce the data sent to the reduce phase how would you re-implement the map phase to
+minimise it's output.
