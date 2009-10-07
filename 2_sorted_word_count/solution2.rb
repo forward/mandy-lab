@@ -1,6 +1,8 @@
 require "rubygems"
 require "mandy"
 
+MAX_WORDS = 100_000
+
 Mandy.job "Word Count" do
   map_tasks 5
   reduce_tasks 3
@@ -20,15 +22,15 @@ Mandy.job "Word Count" do
 end
 
 
-Mandy.job "Sorted Word Count" do
+Mandy.job "Descending Sorted Word Count" do
   map_tasks 5
   reduce_tasks 1
   
   map do |word, count|        
-    emit(count.to_i, word)
+    emit(MAX_WORDS-count.to_i, word)
   end
   
   reduce do |count, words|
-    words.each {|word| emit(word, count.to_i) }
+    words.each {|word| emit(word, MAX_WORDS-count.to_i) }
   end
 end
