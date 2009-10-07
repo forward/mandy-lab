@@ -6,7 +6,7 @@ Mandy.job "Grep" do
   reduce_tasks 3
   
   map do |line|
-    emit(line, 1) if (line =~ /Alice/)
+    emit(line, 1) if (line =~ /#{parameter(:pattern)}/)
   end
   
   reduce do |line, matches|
