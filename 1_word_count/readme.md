@@ -15,25 +15,25 @@ Given an input of:
 
 produce the following:
 
-`ALICE	1
-and	1
-bank 1
-beginning	1
-by	1
-do	1
-get	1
-having	1
-her	1
-nothing	1
-of	2
-on	1
-once	1
-sister	1
-sitting	1
-the	1
-tired	1
-to	2
-very	1
-was	1`
+		ALICE	1
+		and	1
+		bank 1
+		beginning	1
+		by	1
+		do	1
+		get	1
+		having	1
+		her	1
+		nothing	1
+		of	2
+		on	1
+		once	1
+		sister	1
+		sitting	1
+		the	1
+		tired	1
+		to	2
+		very	1
+		was	1
 
 Further example text (for input) is available in `./input/alice.txt or ./input/war.txt`
