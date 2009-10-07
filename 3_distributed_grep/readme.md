@@ -3,8 +3,8 @@ Distributed Grep
 
 Problem
 -------
-Given an input document, perform a regular expression-based grep across the data, returning lines matching the
-provided expression.
+Given an input document, perform a regular expression-based grep across the data and return the lines matching a
+regular expression.
 
 Example
 -------
