@@ -6,10 +6,13 @@ Mandy.job "Super Grep" do
   reduce_tasks 3
   
   map do |line|
-    emit(line, 1) if (line =~ /#{parameter(:pattern)}/)
+    next unless (line =~ /#{parameter(:pattern)}/)
+    emit(line, 1)
+    increment_counter("No. of unique matches")
   end
   
   reduce do |line, matches|
     emit(line)
+    increment_counter("No. of unique matches")
   end
 end
