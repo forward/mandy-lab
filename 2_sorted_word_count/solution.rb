@@ -20,7 +20,7 @@ Mandy.job "Word Count" do
 end
 
 
-Mandy.job "Sorted Word Count" do
+Mandy.job "Word Count: Sorting" do
   map_tasks 5
   reduce_tasks 1
   

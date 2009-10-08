@@ -1,5 +1,3 @@
-require 'rubygems'
-require 'mandy'
 require File.join(File.dirname(__FILE__), 'solution')
 
 describe "Word Count Solution 1" do
