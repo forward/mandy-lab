@@ -2,11 +2,11 @@
 <configuration>
   <property>
     <name>fs.default.name</name>
-    <value>hdfs://hadoopmaster.cluster.trafficbroker.co.uk:9000/</value>
+    <value>hdfs://master.hadoop.forward.co.uk:9000/</value>
   </property>
   <property>
     <name>mapred.job.tracker</name>
-    <value>hadoopmaster.cluster.trafficbroker.co.uk:9001</value>
+    <value>master.hadoop.forward.co.uk:9001</value>
   </property>
   <property>
     <name>hadoop.job.ugi</name>
